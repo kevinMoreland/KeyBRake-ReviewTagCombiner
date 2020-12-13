@@ -1,5 +1,7 @@
 # Hackoff 3.0 Siemens Healthineers Challenge 1: KeyBRake - Review Tag Combiner
 
+The included notebook was developed in Google Collab, and will not work out of the box without modifications and the json file mounted through Google Drive.
+
 ## Problem Description
 Customers write product reviews on ecommerce websites like Amazon. Amazon processes the reviews to generate commonly occurring tags. But, there exist multiple tags referring to the same thing. Create algorithm to combine review tags based on meaning.
 
@@ -33,7 +35,7 @@ Customers write product reviews on ecommerce websites like Amazon. Amazon proces
 
 #### WuPalmer Similarity
 
-**Summary:** The WuPalmer similarity finds the semantic similarity of two strings. The score is derived from the distance of one string to another through WordNet, which organizes topics by similarity into a graph for grouping.
+**Summary:** The WuPalmer similarity finds the similarity of two strings based on the depths of where their synonym sets meet. We use this to find the number of similar words between two keywords/phrases. If they are similar, they are organized into the same tag group.
 
 [Research paper](https://arxiv.org/abs/cmp-lg/9406033)
 
