@@ -39,11 +39,8 @@ Data used for this project is Amazon product reviews from the years 2012 - 2014 
 
 #### WuPalmer Similarity
 
-**Summary:** The WuPalmer similarity finds the similarity of two strings based on the depths of where their synonym sets meet. We use this to find the number of similar words between two keywords/phrases. If they are similar, they are organized into the same tag group.
+**Summary:** The WuPalmer similarity finds the similarity of two words based on the depths of where their synonym sets meet. We use this to compare every word in each key phrase with every word in another, and get a similarity score. Key phrases that are determined to be similar are then organized into the same tag group.
 
-[Research paper](https://arxiv.org/abs/cmp-lg/9406033)
-
-#### Matching Similarity
 [Research Paper](http://www.cs.joensuu.fi/pages/rezaei/MatchingSimilarity_SSPR2014.pdf)
 
 ## Conclusion
