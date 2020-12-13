@@ -34,3 +34,6 @@ Customers write product reviews on ecommerce websites like Amazon. Amazon proces
 #### WuPalmer Similarity
 
 [Research paper](https://arxiv.org/abs/cmp-lg/9406033)
+
+#### Matching Similarity
+[Research Paper](http://www.cs.joensuu.fi/pages/rezaei/MatchingSimilarity_SSPR2014.pdf)
