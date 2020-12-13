@@ -15,7 +15,7 @@ Customers write product reviews on ecommerce websites like Amazon. Amazon proces
 
 #### RAKE (Rapid Automated Keyword Extraction)
 
-**Summary:** RAKE generates all possible candidate keywords from a text, then prioritizes keywords based on co-occurrences with other keywords. These best keywords are then firther reduced using other similarity metrics.
+**Summary:** RAKE generates all possible candidate keywords from a text, then prioritizes keywords based on co-occurrences with other keywords. These best keywords are then further reduced using other similarity metrics.
 
 [Research paper](https://www.researchgate.net/publication/227988510_Automatic_Keyword_Extraction_from_Individual_Documents)
 
