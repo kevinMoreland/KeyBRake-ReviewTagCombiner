@@ -7,7 +7,7 @@ Customers write product reviews on ecommerce websites like Amazon. Amazon proces
 * Stanley Armstrong
 * Samuel Frazee
 * Kevin Moreland
-* Angello Parolivelli
+* Angello Parrolivelli
 
 ## Technologies
 
@@ -15,7 +15,7 @@ Customers write product reviews on ecommerce websites like Amazon. Amazon proces
 
 #### Rake
 
-#### Bert
+#### BERT
 
 ### Tag Grouping
 
