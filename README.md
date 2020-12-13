@@ -36,3 +36,6 @@ Customers write product reviews on ecommerce websites like Amazon. Amazon proces
 **Summary:** The WuPalmer similarity finds the semantic similarity of two strings. The score is derived from the distance of one string to another through WordNet, which organizes topics by similarity into a graph for grouping.
 
 [Research paper](https://arxiv.org/abs/cmp-lg/9406033)
+
+#### Matching Similarity
+[Research Paper](http://www.cs.joensuu.fi/pages/rezaei/MatchingSimilarity_SSPR2014.pdf)
