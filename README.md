@@ -13,13 +13,17 @@ Customers write product reviews on ecommerce websites like Amazon. Amazon proces
 
 ### Keyword Extraction
 
-#### Rake
+#### RAKE (Rapid Automated Keyword Extraction)
 
-  [Research paper](https://www.researchgate.net/publication/227988510_Automatic_Keyword_Extraction_from_Individual_Documents)
+**Summary:** RAKE generates all possible candidate keywords from a text, then prioritizes keywords based on co-occurrences with other keywords. These best keywords are then firther reduced using other similarity metrics.
 
-  [rake-nltk](https://pypi.org/project/rake-nltk/)
+[Research paper](https://www.researchgate.net/publication/227988510_Automatic_Keyword_Extraction_from_Individual_Documents)
 
-#### BERT
+[rake-nltk](https://pypi.org/project/rake-nltk/)
+
+#### BERT (Bidirectional Encoder Representations from Transformers)
+
+**Summary:** BERT is a model developed by Google to perform bidirectional transformations on words. In our code, we use BERT to tokenize our reviews and then extract keywords using the token representations.
 
 [Research paper](https://arxiv.org/abs/1810.04805)
 
@@ -28,3 +32,5 @@ Customers write product reviews on ecommerce websites like Amazon. Amazon proces
 ### Tag Grouping
 
 #### WuPalmer Similarity
+
+[Research paper](https://arxiv.org/abs/cmp-lg/9406033)
