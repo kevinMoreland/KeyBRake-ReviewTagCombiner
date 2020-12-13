@@ -13,7 +13,7 @@ Customers write product reviews on ecommerce websites like Amazon. Amazon proces
 
 ## Data
 
-Data used for this project is Amazon product reviews from the years 2012 - 2014 for various products. This is not a complete dataset of all reviews for these products. The data is in JSON format and can be found as a direct download from [https://bit.ly/SHPL1](here) or you can view the source of this data [http://jmcauley.ucsd.edu/data/amazon/](here) (our data is found under "Small" subsets for experimentation > Cell Phones and Accessories).
+Data used for this project is Amazon product reviews from the years 2012 - 2014 for various products. This is not a complete dataset of all reviews for these products. The data is in JSON format and can be found as a direct download from [here](https://bit.ly/SHPL1) or you can view the source of this data [here](http://jmcauley.ucsd.edu/data/amazon/) (our data is found under "Small" subsets for experimentation > Cell Phones and Accessories).
 
 ## Technologies
 
@@ -21,7 +21,7 @@ Data used for this project is Amazon product reviews from the years 2012 - 2014 
 
 #### RAKE (Rapid Automated Keyword Extraction)
 
-**Summary:** RAKE generates all possible candidate keywords from a text, then prioritizes keywords based on co-occurrences with other keywords. These best keywords are then further reduced using other similarity metrics.
+**Summary:** RAKE generates all possible candidate keywords from a text, then prioritizes keywords based on co-occurrences with other keywords. These best keywords are then further reduced using other similarity metrics. The primary metric of judging keywords is based on the degree of words, frequency of words, or degree to frequency ratio (d(w)/f(w)).
 
 [Research paper](https://www.researchgate.net/publication/227988510_Automatic_Keyword_Extraction_from_Individual_Documents)
 
@@ -29,7 +29,7 @@ Data used for this project is Amazon product reviews from the years 2012 - 2014 
 
 #### BERT (Bidirectional Encoder Representations from Transformers)
 
-**Summary:** BERT is a model developed by Google to perform bidirectional transformations on words. In our code, we use BERT to tokenize our reviews and then extract keywords using the token representations.
+**Summary:** BERT is a model developed by Google to perform bidirectional transformations on words. In our code, we use BERT to tokenize our reviews and then extract keywords using the token representations. BERT judges keywords based on semantic analysis and is trained on data from Wikipedia.
 
 [Research paper](https://arxiv.org/abs/1810.04805)
 
@@ -41,4 +41,11 @@ Data used for this project is Amazon product reviews from the years 2012 - 2014 
 
 **Summary:** The WuPalmer similarity finds the similarity of two strings based on the depths of where their synonym sets meet. We use this to find the number of similar words between two keywords/phrases. If they are similar, they are organized into the same tag group.
 
+[Research paper](https://arxiv.org/abs/cmp-lg/9406033)
+
+#### Matching Similarity
 [Research Paper](http://www.cs.joensuu.fi/pages/rezaei/MatchingSimilarity_SSPR2014.pdf)
+
+## Conclusion
+
+We make use of BERT and Rake to get different types of keywords per product based on lots of product reviews. The more reviews, the better these technologies are. We then compile these keywords (which are product tags) and try to group them together by using the WuPalmer similarity and some custom-made tolerances and comparisons. If the probability is high that the product tags are similar in meaning, we put them together in a TagGroup. We end up with a list of TagGroups that show which tags hasve the same meanings written differently.
